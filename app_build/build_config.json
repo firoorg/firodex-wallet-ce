@@ -19,7 +19,7 @@
     },
     "coins": {
         "update_commit_on_build": true,
-        "bundled_coins_repo_commit": "daec2cd67b588936b1dc331ec9049ee15dc60dd4",
+        "bundled_coins_repo_commit": "8d846eaf1bb0251fe862fbff09464a281e6d192c",
         "coins_repo_api_url": "https://api.github.com/repos/komodoce/coins-ce",
         "coins_repo_content_url": "https://raw.githubusercontent.com/komodoce/coins-ce",
         "coins_repo_branch": "master",
