@@ -1,13 +1,15 @@
-# Komodo Wallet & DEX
+# FiroDEX
 
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
-<a href="https://app.komodoplatform.com" target="_blank">![web_app](https://github.com/KomodoPlatform/komodo-wallet-archive/assets/10762374/ca06f4bc-2e7a-40c6-9e06-e0872a32cbdf)</a>
+FiroDEX is a fork of [Komodo Wallet and DEX](https://github.com/KomodoPlatform/komodo-wallet).
+
+Firo Core Team does not host any FiroDEX instances and any running instance is run by volunteers.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/KomodoPlatform/komodo-wallet?quickstart=1)
 
 ### Runs on: 
- - [Web](https://app.komodoplatform.com)
+ - Web
  - Desktop
    - Windows
    - MacOS
@@ -19,8 +21,6 @@
 ----
 
 ## Developer guide.
-
-Current production version is available here: https://app.komodoplatform.com
 
 ### Index
 - [Code of Conduct](docs/CODE_OF_CONDUCT.md)
