@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 ThemeData get themeGlobalLight {
   const Color inputBackgroundColor = Color.fromRGBO(243, 245, 246, 1);
-  const Color textColor = Color.fromRGBO(69, 96, 120, 1);
+  const Color textColor = Color.fromRGBO(105, 47, 57, 1);
 
   SnackBarThemeData snackBarThemeLight() => const SnackBarThemeData(
         elevation: 12.0,
@@ -19,8 +19,8 @@ ThemeData get themeGlobalLight {
       );
 
   final ColorScheme colorScheme = const ColorScheme.light().copyWith(
-    primary: const Color.fromRGBO(90, 104, 230, 1),
-    secondary: const Color.fromRGBO(73, 134, 234, 1),
+    primary: const Color.fromRGBO(190, 30, 54, 1),
+    secondary: const Color.fromRGBO(242, 68, 100, 1),
     tertiary: const Color.fromARGB(255, 192, 225, 255),
     surface: const Color.fromRGBO(255, 255, 255, 1),
     onSurface: const Color.fromRGBO(251, 251, 251, 1),
@@ -59,7 +59,7 @@ ThemeData get themeGlobalLight {
     ),
     colorScheme: colorScheme,
     primaryColor: colorScheme.primary,
-    dividerColor: const Color.fromRGBO(208, 214, 237, 1),
+    dividerColor: const Color.fromRGBO(235, 204, 210, 1),
     appBarTheme: AppBarTheme(color: colorScheme.surface),
     iconTheme: IconThemeData(color: colorScheme.primary),
     progressIndicatorTheme:
@@ -76,9 +76,9 @@ ThemeData get themeGlobalLight {
     hintColor: const Color.fromRGBO(183, 187, 191, 1),
     snackBarTheme: snackBarThemeLight(),
     textSelectionTheme: TextSelectionThemeData(
-      cursorColor: const Color.fromRGBO(57, 161, 238, 1),
-      selectionColor: const Color.fromRGBO(57, 161, 238, 1).withOpacity(0.3),
-      selectionHandleColor: const Color.fromRGBO(57, 161, 238, 1),
+      cursorColor: const Color.fromRGBO(238, 57, 161, 1),
+      selectionColor: const Color.fromRGBO(238, 57, 161, 1).withOpacity(0.3),
+      selectionHandleColor: const Color.fromRGBO(238, 57, 161, 1),
     ),
     inputDecorationTheme: InputDecorationTheme(
       enabledBorder: outlineBorderLight(Colors.transparent),
@@ -127,7 +127,7 @@ ThemeData get themeGlobalLight {
       // remove icons shift
       type: BottomNavigationBarType.fixed,
       backgroundColor: colorScheme.surface,
-      selectedItemColor: const Color.fromRGBO(34, 121, 241, 1),
+      selectedItemColor: const Color.fromRGBO(241, 37, 68, 1),
       unselectedItemColor: textColor,
       unselectedLabelStyle:
           const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
@@ -141,7 +141,7 @@ ThemeData get themeGlobalLight {
         selectedBackgroundColor: colorScheme.primary,
         foregroundColor: textColor.withOpacity(0.7),
         selectedForegroundColor: Colors.white,
-        side: const BorderSide(color: Color.fromRGBO(208, 214, 237, 1)),
+        side: const BorderSide(color: Color.fromRGBO(235, 204, 210, 1)),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),

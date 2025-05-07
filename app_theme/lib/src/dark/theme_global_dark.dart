@@ -21,12 +21,12 @@ ThemeData get themeGlobalDark {
   //TODO! Implement all light-theme equivalent properties
   final ColorScheme colorScheme = ColorScheme.fromSeed(
     brightness: Brightness.dark,
-    seedColor: const Color.fromRGBO(61, 119, 233, 1),
-    primary: const Color.fromRGBO(61, 119, 233, 1),
-    secondary: const Color.fromRGBO(90, 104, 230, 1),
+    seedColor: const Color.fromRGBO(182, 25, 54, 1),
+    primary: const Color.fromRGBO(182, 25, 54, 1),
+    secondary: const Color.fromRGBO(230, 90, 104, 1),
     tertiary: const Color.fromRGBO(28, 32, 59, 1), // - @ColorScheme: Updated
-    surface: const Color.fromRGBO(22, 25, 39, 1),
-    onSurface: const Color.fromRGBO(18, 20, 32, 1),
+    surface: const Color.fromRGBO(122, 21, 36, 1),
+    onSurface: const Color.fromRGBO(79, 11, 21, 1),
     error: const Color.fromRGBO(202, 78, 61, 1),
   );
 
@@ -62,12 +62,12 @@ ThemeData get themeGlobalDark {
     ),
     colorScheme: colorScheme,
     primaryColor: colorScheme.primary,
-    dividerColor: const Color.fromRGBO(56, 67, 108, 1),
+    dividerColor: const Color.fromRGBO(108, 56, 67, 1),
     appBarTheme: AppBarTheme(color: colorScheme.surface),
     iconTheme: IconThemeData(color: colorScheme.primary),
     progressIndicatorTheme:
         ProgressIndicatorThemeData(color: colorScheme.primary),
-    dialogBackgroundColor: const Color.fromRGBO(14, 16, 27, 1),
+    dialogBackgroundColor: const Color.fromRGBO(27, 14, 16, 1),
     dialogTheme: const DialogTheme(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
@@ -76,12 +76,12 @@ ThemeData get themeGlobalDark {
       ),
     ),
     canvasColor: colorScheme.surface,
-    hintColor: const Color.fromRGBO(183, 187, 191, 1),
+    hintColor: const Color.fromRGBO(191, 183, 187, 1),
     snackBarTheme: snackBarThemeLight(),
     textSelectionTheme: TextSelectionThemeData(
-      cursorColor: const Color.fromRGBO(57, 161, 238, 1),
-      selectionColor: const Color.fromRGBO(57, 161, 238, 1).withOpacity(0.3),
-      selectionHandleColor: const Color.fromRGBO(57, 161, 238, 1),
+      cursorColor: const Color.fromRGBO(238, 57, 161, 1),
+      selectionColor: const Color.fromRGBO(238, 57, 161, 1).withOpacity(0.3),
+      selectionHandleColor: const Color.fromRGBO(238, 57, 161, 1),
     ),
     inputDecorationTheme: InputDecorationTheme(
       enabledBorder: outlineBorderLight(Colors.transparent),
@@ -165,7 +165,7 @@ ThemeData get themeGlobalDark {
       type: BottomNavigationBarType.fixed,
       backgroundColor: colorScheme.surface,
       selectedItemColor: textColor,
-      unselectedItemColor: const Color.fromRGBO(173, 175, 198, 1),
+      unselectedItemColor: const Color.fromRGBO(198, 173, 175, 1),
       unselectedLabelStyle:
           const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
       selectedLabelStyle:
