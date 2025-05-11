@@ -21,7 +21,7 @@ class NftTxnDesktopFilters extends StatelessWidget {
     final colorScheme = Theme.of(context).extension<ColorSchemeExtension>();
     final chipColorScheme = UIChipColorScheme(
       emptyContainerColor: colorScheme?.surfCont,
-      emptyTextColor: colorScheme?.s70,
+      emptyTextColor: Colors.red,
       pressedContainerColor: colorScheme?.surfContLowest,
       selectedContainerColor: colorScheme?.primary,
       selectedTextColor: colorScheme?.surf,
@@ -33,7 +33,7 @@ class NftTxnDesktopFilters extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            color: colorScheme?.surfContHighest,
+            color: Color.fromRGBO(238, 54, 61, 1),
           ),
           child: Row(children: [
             Flexible(
@@ -53,7 +53,7 @@ class NftTxnDesktopFilters extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: colorScheme?.surfCont,
+                      color: Colors.white,
                     ),
                     prefixInsets: const EdgeInsets.only(left: 16, right: 8),
                     prefixIcon: SvgPicture.asset(
@@ -143,10 +143,10 @@ class NftTxnDesktopFilters extends StatelessWidget {
                     height: _itemHeight,
                     width: 72,
                     text: LocaleKeys.reset.tr(),
-                    borderColor: colorScheme?.s70,
+                    borderColor: Colors.red,
                     textStyle: Theme.of(context).textTheme.labelLarge?.copyWith(
                           fontWeight: FontWeight.w600,
-                          color: colorScheme?.s70,
+                          color: Colors.red,
                           fontSize: 14,
                         ),
                     onPressed: null,

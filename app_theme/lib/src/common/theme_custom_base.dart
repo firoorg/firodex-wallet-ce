@@ -159,9 +159,9 @@ class TradingDetailsTheme {
     ],
     this.swapStepTimerColor = const Color.fromRGBO(162, 175, 187, 1),
     this.swapStepCircleNormalColor = const Color.fromRGBO(236, 137, 147, 1),
-    this.swapStepCircleFailedColor = const Color.fromRGBO(229, 33, 106, 1),
+    this.swapStepCircleFailedColor = const Color.fromRGBO(200, 80, 90, 1),
     this.swapStepCircleDisabledColor = const Color.fromRGBO(210, 194, 203, 1),
-    this.swapStepTextFailedColor = const Color.fromRGBO(229, 33, 103, 1),
+    this.swapStepTextFailedColor = const Color.fromRGBO(200, 80, 90, 1),
     this.swapStepTextDisabledColor = const Color.fromRGBO(188, 162, 176, 1),
     this.swapStepTextCurrentColor = const Color.fromRGBO(235, 72, 137, 1),
   });
@@ -200,10 +200,10 @@ class CoinsManagerTheme {
 
 class DexPageTheme {
   const DexPageTheme({
-    this.takerLabelColor = const Color.fromRGBO(239, 47, 179, 1),
-    this.makerLabelColor = const Color.fromRGBO(227, 106, 77, 1),
-    this.successfulSwapStatusColor = const Color.fromRGBO(73, 212, 162, 1),
-    this.failedSwapStatusColor = const Color.fromRGBO(229, 33, 103, 1),
+    this.takerLabelColor = const Color.fromRGBO(210, 47, 119, 1),
+    this.makerLabelColor = const Color.fromRGBO(180, 80, 70, 1),
+    this.successfulSwapStatusColor = const Color.fromRGBO(120, 160, 140, 1),
+    this.failedSwapStatusColor = const Color.fromRGBO(190, 60, 80, 1),
     this.successfulSwapStatusBackgroundColor =
         const Color.fromRGBO(73, 212, 162, 0.12),
     this.activeOrderFormTabColor = const Color.fromRGBO(231, 89, 107, 1),
@@ -224,9 +224,9 @@ class DexPageTheme {
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
     ),
-    this.frontPlate = const Color.fromRGBO(255, 255, 255, 1),
-    this.frontPlateInner = const Color.fromRGBO(255, 255, 255, 1),
-    this.frontPlateBorder = const Color.fromRGBO(239, 239, 239, 1),
+    this.frontPlate = const Color.fromRGBO(250, 250, 250, 1),
+    this.frontPlateInner = const Color.fromRGBO(245, 245, 245, 1),
+    this.frontPlateBorder = const Color.fromRGBO(220, 220, 220, 1),
     this.activeText = const Color.fromRGBO(105, 47, 57, 1),
     this.inactiveText = const Color.fromRGBO(204, 168, 178, 1),
     this.blueText = const Color.fromRGBO(214, 80, 104, 1),
@@ -234,7 +234,7 @@ class DexPageTheme {
     this.smallButtonText = const Color.fromRGBO(105, 47, 57, 1),
     this.pagePlateDivider = const Color.fromRGBO(244, 244, 244, 1),
     this.coinPlateDivider = const Color.fromRGBO(244, 244, 244, 1),
-    this.formPlateDivider = const Color.fromRGBO(218, 224, 246, 1),
+    this.formPlateDivider = const Color.fromRGBO(235, 235, 235, 1),
     this.emptyPlace = const Color.fromRGBO(239, 239, 239, 1),
     this.tokenName = Colors.white,
     this.expandMore = const Color.fromRGBO(181, 153, 168, 1),

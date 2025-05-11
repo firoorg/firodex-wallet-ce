@@ -44,15 +44,15 @@ class _NftMainControlsState extends State<NftMainControls> {
           key: const Key('nft-receive-btn'),
           width: 140,
           height: 40,
-          backgroundColor: colorScheme.surfContHighest,
+          backgroundColor: Color.fromRGBO(190, 30, 54, 1),
           prefix: Transform.rotate(
               angle: math.pi / 4,
               child: Icon(
                 Icons.arrow_forward,
-                color: colorScheme.primary,
+                color: Colors.white,
               )),
           onPressed: _onReceiveNft,
-          textStyle: textTheme.bodySBold.copyWith(color: colorScheme.primary),
+          textStyle: textTheme.bodySBold.copyWith(color: Colors.white),
         ),
         const Spacer(),
         UiPrimaryButton(
@@ -62,7 +62,9 @@ class _NftMainControlsState extends State<NftMainControls> {
           width: 140,
           height: 40,
           backgroundColor: Colors.transparent,
-          textStyle: textTheme.bodySBold.copyWith(color: colorScheme.primary),
+          textStyle: textTheme.bodySBold.copyWith(color: Theme.of(context).brightness == Brightness.dark
+                            ? Colors.white
+                            : Colors.red,),
         ),
       ],
     );

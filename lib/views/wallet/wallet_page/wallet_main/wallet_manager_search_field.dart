@@ -58,6 +58,7 @@ class _WalletManagerSearchFieldState extends State<WalletManagerSearchField> {
         prefixIcon: Icon(
           Icons.search,
           size: isMobile ? 25 : 18,
+          color: Color.fromRGBO(190, 30, 54, 1),
         ),
         inputFormatters: [LengthLimitingTextInputFormatter(40)],
         hintText: LocaleKeys.searchAssets.tr(),
@@ -65,10 +66,10 @@ class _WalletManagerSearchFieldState extends State<WalletManagerSearchField> {
             fontSize: 12,
             fontWeight: FontWeight.w500,
             overflow: TextOverflow.ellipsis,
-            height: 1.3),
+            height: 1.3, color: Colors.red),
         inputContentPadding: const EdgeInsets.fromLTRB(0, 0, 12, 0),
         maxLines: 1,
-        style: const TextStyle(fontSize: 12),
+        style: const TextStyle(fontSize: 12, color: Colors.red),
         fillColor: _searchFieldColor,
       ),
     );

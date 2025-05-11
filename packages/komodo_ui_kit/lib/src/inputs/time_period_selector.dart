@@ -138,7 +138,12 @@ class TimePeriodSelectorSegmentedButton extends StatelessWidget {
           return ButtonSegment<Duration>(
             value: value,
             label: !isSelected
-                ? Text(getDurationCode(value))
+                ? Text(
+                    getDurationCode(value),
+                    style: TextStyle(
+                      color: Colors.red,
+                    ),
+                  )
                 : Container(
                     padding:
                         const EdgeInsets.symmetric(vertical: 2, horizontal: 4),

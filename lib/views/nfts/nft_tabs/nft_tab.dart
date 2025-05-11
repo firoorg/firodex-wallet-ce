@@ -71,7 +71,7 @@ class NftTab extends StatelessWidget {
                       height: 16,
                       key: Key('nft-tab-btn-icon-$chain'),
                       colorFilter: ColorFilter.mode(
-                        isSelected ? colorScheme.surf : colorScheme.s70,
+                        isSelected ? colorScheme.surf : colorScheme.surf,
                         BlendMode.srcIn,
                       ),
                     ),
@@ -86,9 +86,9 @@ class NftTab extends StatelessWidget {
                       _title,
                       key: Key('nft-tab-btn-text-$chain'),
                       style: textTheme.bodySBold.copyWith(
-                        color: isSelected
-                            ? colorScheme.secondary
-                            : colorScheme.s50,
+                        color: Theme.of(context).brightness == Brightness.dark
+                            ? Colors.white
+                            : Colors.red,
                       ),
                     ),
                     _NftCount(chain: chain),

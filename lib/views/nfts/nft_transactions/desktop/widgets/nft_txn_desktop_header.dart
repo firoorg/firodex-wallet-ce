@@ -24,7 +24,7 @@ class _CoinsListHeaderDesktop extends StatelessWidget {
     final colorScheme = Theme.of(context).extension<ColorSchemeExtension>();
     final textScheme = Theme.of(context).extension<TextThemeExtension>();
     final style = textScheme?.bodyXS.copyWith(
-      color: colorScheme?.s50,
+      color: Colors.red,
     );
     return NftTxnDesktopWrapper(
       firstChild: Text(LocaleKeys.status.tr(), style: style),

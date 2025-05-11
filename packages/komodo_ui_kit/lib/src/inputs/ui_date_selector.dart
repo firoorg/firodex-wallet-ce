@@ -78,7 +78,7 @@ class UiDatePicker extends StatelessWidget {
                         selectedTime != null ? formatter(selectedTime) : text,
                     colorScheme: UIChipColorScheme(
                       emptyContainerColor: ext?.surfCont,
-                      emptyTextColor: ext?.s70,
+                      emptyTextColor: Colors.red,
                       pressedContainerColor: ext?.surfContLowest,
                       selectedContainerColor: ext?.primary,
                       selectedTextColor: ext?.surf,

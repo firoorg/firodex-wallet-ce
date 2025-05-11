@@ -22,11 +22,11 @@ ThemeData get themeGlobalDark {
   final ColorScheme colorScheme = ColorScheme.fromSeed(
     brightness: Brightness.dark,
     seedColor: const Color.fromRGBO(182, 25, 54, 1),
-    primary: const Color.fromRGBO(182, 25, 54, 1),
+    primary: const Color.fromRGBO(17, 1, 4, 1),
     secondary: const Color.fromRGBO(230, 90, 104, 1),
     tertiary: const Color.fromRGBO(28, 32, 59, 1), // - @ColorScheme: Updated
     surface: const Color.fromRGBO(122, 21, 36, 1),
-    onSurface: const Color.fromRGBO(79, 11, 21, 1),
+    onSurface: const Color.fromRGBO(11, 11, 11, 1),
     error: const Color.fromRGBO(202, 78, 61, 1),
   );
 
@@ -41,10 +41,10 @@ ThemeData get themeGlobalDark {
     bodyMedium: const TextStyle(
         fontSize: 16.0, color: textColor, fontWeight: FontWeight.w300),
     labelLarge: const TextStyle(fontSize: 16.0, color: textColor),
-    bodyLarge: TextStyle(fontSize: 14.0, color: textColor.withOpacity(0.5)),
+    bodyLarge: TextStyle(fontSize: 14.0, color: textColor),
     bodySmall: TextStyle(
       fontSize: 12.0,
-      color: textColor.withOpacity(0.8),
+      color: textColor,
       fontWeight: FontWeight.w400,
     ),
   );
@@ -52,7 +52,7 @@ ThemeData get themeGlobalDark {
   return ThemeData(
     useMaterial3: false,
     fontFamily: 'Manrope',
-    scaffoldBackgroundColor: colorScheme.onSurface,
+    scaffoldBackgroundColor: colorScheme.primary,
     cardColor: colorScheme.surface,
     cardTheme: CardTheme(
       color: colorScheme.surface,
@@ -63,7 +63,7 @@ ThemeData get themeGlobalDark {
     colorScheme: colorScheme,
     primaryColor: colorScheme.primary,
     dividerColor: const Color.fromRGBO(108, 56, 67, 1),
-    appBarTheme: AppBarTheme(color: colorScheme.surface),
+    appBarTheme: AppBarTheme(color: colorScheme.primary),
     iconTheme: IconThemeData(color: colorScheme.primary),
     progressIndicatorTheme:
         ProgressIndicatorThemeData(color: colorScheme.primary),
@@ -107,7 +107,7 @@ ThemeData get themeGlobalDark {
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.resolveWith<Color?>(
           (Set<WidgetState> states) {
-            if (states.contains(WidgetState.disabled)) return Colors.grey;
+            if (states.contains(WidgetState.disabled)) return Colors.white;
             return colorScheme.primary;
           },
         ),

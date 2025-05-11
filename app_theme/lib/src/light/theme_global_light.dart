@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 ThemeData get themeGlobalLight {
   const Color inputBackgroundColor = Color.fromRGBO(243, 245, 246, 1);
-  const Color textColor = Color.fromRGBO(105, 47, 57, 1);
+  const Color textColor = Color.fromRGBO(190, 30, 54, 1);
 
   SnackBarThemeData snackBarThemeLight() => const SnackBarThemeData(
         elevation: 12.0,
@@ -38,10 +38,10 @@ ThemeData get themeGlobalLight {
     bodyMedium: const TextStyle(
         fontSize: 16.0, color: textColor, fontWeight: FontWeight.w300),
     labelLarge: const TextStyle(fontSize: 16.0, color: textColor),
-    bodyLarge: TextStyle(fontSize: 14.0, color: textColor.withOpacity(0.5)),
+    bodyLarge: TextStyle(fontSize: 14.0, color: textColor),
     bodySmall: TextStyle(
       fontSize: 12.0,
-      color: textColor.withOpacity(0.8),
+      color: textColor,
       fontWeight: FontWeight.w400,
     ),
   );
@@ -93,18 +93,18 @@ ThemeData get themeGlobalLight {
       filled: true,
       contentPadding: const EdgeInsets.symmetric(vertical: 12, horizontal: 22),
       hintStyle: TextStyle(
-        color: textColor.withOpacity(0.58),
+        color: textColor,
       ),
       labelStyle: TextStyle(
-        color: textColor.withOpacity(0.58),
+        color: textColor,
       ),
-      prefixIconColor: textColor.withOpacity(0.58),
+      prefixIconColor: textColor,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.resolveWith<Color?>(
           (Set<WidgetState> states) {
-            if (states.contains(WidgetState.disabled)) return Colors.grey;
+            if (states.contains(WidgetState.disabled)) return Colors.red;
             return colorScheme.primary;
           },
         ),
